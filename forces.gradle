@@ -30,6 +30,7 @@ configurations.all {
         force deps.camera.view
         force deps.google.gson
         force deps.test.junit
+        force deps.test.findbugs
         force deps.google.guava
 
         force deps.support.recyclerview
