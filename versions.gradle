@@ -1,0 +1,313 @@
+ext.deps = [:]
+// 统一版本号
+def appVersions = [:]
+appVersions.versionCode = 3307
+appVersions.versionName = "3.3.7"
+ext.appVersions = appVersions
+
+//统一 Android SDK
+def buildVersions = [:]
+buildVersions.compileSdk = 31
+buildVersions.minSdk = 21
+buildVersions.targetSdk = 30
+buildVersions.buildTools = ""
+ext.buildVersions = buildVersions
+
+//统一JDK版本
+def jdkVersion = [:]
+jdkVersion.sourceCompatibility = JavaVersion.VERSION_1_8
+jdkVersion.targetCompatibility = JavaVersion.VERSION_1_8
+ext.jdkVersion = jdkVersion
+
+def versions = [:]
+versions.appcompat = "1.3.1"
+versions.constraintlayout = "2.1.3"
+versions.ext_junit = "1.1.3"
+versions.junit = "4.13.2"
+versions.espresso = "3.4.0"
+versions.design = "28.0.0"
+versions.material = "1.4.0"
+versions.butterknife = "10.2.1"
+versions.butterknife_compiler = "10.2.1"
+versions.retrofit = "2.9.0"
+versions.converter = "2.9.0"
+versions.adapter = "2.9.0"
+versions.logging = "3.8.1"
+versions.okhttp = "4.9.3"
+
+versions.rxbinding = "4.0.0"
+versions.rxlifecycle = "4.0.2"
+
+versions.rxjava = "3.1.3"
+versions.rxandroid = "3.0.0"
+
+versions.smartrefresh_layout = "2.0.5"
+
+versions.glide = "4.12.0"
+
+versions.common = "9.4.9"
+versions.asms = "1.6.3"
+versions.apm = "1.2.0"
+versions.u_push = "6.5.1"
+versions.u_union = "1.4.0"
+
+versions.huawei_umengaccs = "1.3.7"
+versions.huawei_push = "6.3.0.302"
+versions.huawei_security = "1.1.5.309"
+versions.huawei_network = "5.0.8.301"
+
+
+versions.xiaomi_umengaccs = "1.2.8-fix"
+versions.xiaomi_push = "4.9.1"
+versions.vivo_umengaccs = "1.1.6"
+versions.vivo_push = "3.0.0.4"
+versions.oppo_umengaccs = "1.0.8-fix"
+versions.oppo_push = "3.0.0"
+
+versions.oaid_lenovo = "1.0.0"
+versions.oaid_mi = "1.0.0"
+versions.oaid_oppo = "1.0.4"
+versions.oaid_vivo = "1.0.0.1"
+versions.dkplayer = "3.3.4"
+versions.smartcropper = "v2.1.4"
+versions.easypermissions = "3.0.0"
+versions.wechat = "6.6.4"
+versions.down_timer = "1.0.3"
+versions.banner = "2.3.20"
+versions.tinypinyin = "2.0.3"
+versions.hutool = "4.4.5"
+versions.git = "1.2.15"
+versions.fastjson = "1.2.49"
+versions.subtitle = "1.0.6"
+versions.time_picker = "4.1.9"
+versions.zxing = "2.0.3"
+versions.mpchart = "v3.1.0"
+versions.applog = "5.3.0"
+versions.xpermission = "11.6"
+versions.blankj = "1.30.6"
+versions.combinebitmap = "1.0.5"
+versions.oaid = "4.2.3"
+versions.pictureselector = "v2.7.3-rc09"
+versions.subsampling = "3.10.0"
+versions.gif = "1.2.15"
+versions.camera_lifecycle = "1.1.0"
+versions.camera_camera2 = "1.1.0"
+versions.camera_core = "1.1.0"
+versions.camera_view = "1.1.0"
+
+versions.lifecycle_process = "2.4.0"
+versions.lifecycle_runtime = "2.4.0"
+versions.lifecycle_livedata_core = "2.3.1"
+versions.lifecycle_livedata = "2.2.0"
+versions.lifecycle_viewmodel = "2.3.1"
+versions.lifecycle_common = "2.3.1"
+versions.lifecycle_extensions = "2.2.0"
+
+versions.databinding = "7.1.3"
+versions.kotlin = "1.4.32"
+versions.kotlinx = "1.3.9"
+
+versions.page = "2.0.0-rc01"
+versions.gson = "2.8.6"
+versions.core = "1.7.0"
+versions.core_unit = "2.1.0"
+
+versions.fragment = "1.3.6"
+//versions.xlifecycle = "2.3.1"
+versions.transition = "1.4.1"
+versions.exifinterface = "1.3.3"
+versions.concurrent = "1.1.0"
+versions.vectordrawable = "1.1.0"
+versions.collection = "1.1.0"
+versions.annotation = "1.1.0"
+versions.annotation_experimental = "1.1.0"
+versions.recyclerview = "1.2.1"
+versions.activity = "1.3.1"
+versions.kotlin = "1.4.32"
+versions.hwhmf = "1.4.1.300"
+versions.guava = "30.1-jre"
+versions.logger = "2.2.0"
+versions.AdapterHelper = "3.0.6" //不要用3.0.7 否则会报错 No virtual method getBindingAdapterPosition()
+versions.vlayout = "1.2.36@aar"
+versions.leakcannery = "2.9.1"
+versions.okio = "2.8.0"
+versions.qq_union = "4.482.1352"
+
+def deps = [:]
+def arch = [:]
+arch.page = "androidx.paging:paging-runtime:$versions.page"
+arch.lifecycle_extensions = "androidx.lifecycle:lifecycle-extensions:$versions.lifecycle_extensions"
+arch.lifecycle_process = "androidx.lifecycle:lifecycle-process:$versions.lifecycle_process"
+arch.lifecycle_common = "androidx.lifecycle:lifecycle-common:$versions.lifecycle_common"
+arch.lifecycle_viewmodel = "androidx.lifecycle:lifecycle-viewmodel:$versions.lifecycle_viewmodel"
+arch.lifecycle_runtime = "androidx.lifecycle:lifecycle-runtime:$versions.lifecycle_runtime"
+arch.lifecycle_livedata = "androidx.lifecycle:lifecycle-livedata:$versions.lifecycle_livedata"
+arch.lifecycle_livedata_core = "androidx.lifecycle:lifecycle-livedata-core:$versions.lifecycle_livedata_core"
+deps.arch = arch
+
+def support = [:]
+support.app_compat = "androidx.appcompat:appcompat:$versions.appcompat"
+support.annotations = "androidx.annotation:annotation:$versions.annotation"
+support.constraint_layout = "androidx.constraintlayout:constraintlayout:$versions.constraintlayout"
+support.recyclerview = "androidx.recyclerview:recyclerview:$versions.recyclerview"
+support.design = "com.android.support:design:$versions.design"
+
+support.core = "androidx.core:core:$versions.core"
+support.core_common = "androidx.arch.core:core-common:$versions.core_unit"
+support.core_runtime = "androidx.arch.core:core-runtime:$versions.core_unit"
+
+support.fragment = "androidx.fragment:fragment:$versions.fragment"
+support.vectordrawable = "androidx.vectordrawable:vectordrawable-animated:$versions.vectordrawable"
+support.collection = "androidx.collection:collection:$versions.collection"
+support.concurrent = "androidx.concurrent:concurrent-futures:$versions.concurrent"
+support.transition = "androidx.transition:transition:$versions.transition"
+support.exifinterface = "androidx.exifinterface:exifinterface:$versions.exifinterface"
+support.annotation = "androidx.annotation:annotation-experimental:$versions.annotation_experimental"
+support.activity = "androidx.activity:activity:$versions.activity"
+
+deps.support = support
+
+def databinding = [:]
+databinding.common = "androidx.databinding:databinding-common:$versions.databinding"
+databinding.runtime = "androidx.databinding:databinding-runtime:$versions.databinding"
+databinding.adapters = "androidx.databinding:databinding-adapters:$versions.databinding"
+deps.databinding = databinding
+
+def google = [:]
+google.gson = "com.google.code.gson:gson:$versions.gson"
+google.material = "com.google.android.material:material:$versions.material"
+google.guava = "com.google.guava:guava:$versions.guava"
+deps.google = google
+
+def test = [:]
+test.ext_junit = "androidx.test.ext:junit:$versions.ext_junit"
+test.junit = "junit:junit:$versions.junit"
+test.espresso = "androidx.test.espresso:espresso-core:$versions.espresso"
+deps.test = test
+
+def jakewharton = [:]
+jakewharton.butterkinfe = "com.jakewharton:butterknife:$versions.butterknife"
+jakewharton.butterkinfe_compiler = "com.jakewharton:butterknife-compiler:$versions.butterknife_compiler"
+deps.jakewharton = jakewharton
+
+def retrofit = [:]
+retrofit.retrofit = "com.squareup.retrofit2:retrofit:$versions.retrofit"
+retrofit.converter = "com.squareup.retrofit2:converter-gson:$versions.converter"
+retrofit.adapter = "com.squareup.retrofit2:adapter-rxjava3:$versions.adapter"
+deps.retrofit = retrofit
+
+def okhttp = [:]
+okhttp.logging = "com.squareup.okhttp3:logging-interceptor:$versions.logging"
+okhttp.okhttp = "com.squareup.okhttp3:okhttp:$versions.okhttp"
+deps.okhttp = okhttp
+
+def trello = [:]
+trello.rxlifecycle = "com.trello.rxlifecycle4:rxlifecycle:$versions.rxlifecycle"
+trello.rxlifecycle_components = "com.trello.rxlifecycle4:rxlifecycle-components:$versions.rxlifecycle"
+trello.rxlifecycle_android = "com.trello.rxlifecycle4:rxlifecycle-android:$versions.rxlifecycle"
+deps.trello = trello
+
+deps.rxbinding = "com.jakewharton.rxbinding4:rxbinding:$versions.rxbinding"
+
+def rxjava = [:]
+rxjava.rxjava = "io.reactivex.rxjava3:rxjava:$versions.rxjava"
+rxjava.rxandroid = "io.reactivex.rxjava3:rxandroid:$versions.rxandroid"
+deps.rxjava = rxjava
+
+def smart_refresh = [:]
+smart_refresh.layout = "io.github.scwang90:refresh-layout-kernel:$versions.smartrefresh_layout"
+smart_refresh.header = "io.github.scwang90:refresh-header-classics:$versions.smartrefresh_layout"
+smart_refresh.footer = "io.github.scwang90:refresh-footer-classics:$versions.smartrefresh_layout"
+deps.smart_refresh = smart_refresh
+
+def glide = [:]
+glide.runtime = "com.github.bumptech.glide:glide:$versions.glide"
+deps.glide = glide
+
+def umeng = [:]
+umeng.common = "com.umeng.umsdk:common:$versions.common"
+umeng.asms = "com.umeng.umsdk:asms:$versions.asms"
+umeng.apm = "com.umeng.umsdk:apm:$versions.apm"
+umeng.oaid_lenovo = "com.umeng.umsdk:oaid_lenovo:$versions.oaid_lenovo"
+umeng.oaid_mi = "com.umeng.umsdk:oaid_mi:$versions.oaid_mi"
+umeng.oaid_oppo = "com.umeng.umsdk:oaid_oppo:$versions.oaid_oppo"
+umeng.oaid_vivo = "com.umeng.umsdk:oaid_vivo:$versions.oaid_vivo"
+
+umeng.push = "com.umeng.umsdk:push:$versions.u_push"
+umeng.union = "com.umeng.umsdk:union:$versions.u_union"
+
+umeng.huawei_umengaccs = "com.umeng.umsdk:huawei-umengaccs:$versions.huawei_umengaccs"
+umeng.huawei_push = "com.huawei.hms:push:$versions.huawei_push"
+umeng.huawei_hmf = "com.huawei.hmf:tasks:$versions.hwhmf"
+umeng.huawei_security = "com.huawei.android.hms:security-ssl:$versions.huawei_security"
+umeng.huawei_network = "com.huawei.hms:network-grs:$versions.huawei_network"
+
+umeng.xiaomi_umengaccs = "com.umeng.umsdk:xiaomi-umengaccs:$versions.xiaomi_umengaccs"
+umeng.xiaomi_push = "com.umeng.umsdk:xiaomi-push:$versions.xiaomi_push"
+
+umeng.vivo_umengaccs = "com.umeng.umsdk:vivo-umengaccs:$versions.vivo_umengaccs"
+umeng.vivo_push = "com.umeng.umsdk:vivo-push:$versions.vivo_push"
+
+umeng.oppo_umengaccs = "com.umeng.umsdk:oppo-umengaccs:$versions.oppo_umengaccs"
+umeng.oppo_push = "com.umeng.umsdk:oppo-push:$versions.oppo_push"
+deps.umeng = umeng
+
+def dkplayer = [:]
+dkplayer.java = "xyz.doikki.android.dkplayer:dkplayer-java:$versions.dkplayer"
+dkplayer.ui = "xyz.doikki.android.dkplayer:dkplayer-ui:$versions.dkplayer"
+dkplayer.ijk = "xyz.doikki.android.dkplayer:player-ijk:$versions.dkplayer"
+deps.dkplayer = dkplayer
+
+def camera = [:]
+camera.lifecycle = "androidx.camera:camera-lifecycle:$versions.camera_lifecycle"
+camera.camera2 = "androidx.camera:camera-camera2:$versions.camera_camera2"
+camera.core = "androidx.camera:camera-core:$versions.camera_core"
+camera.view = "androidx.camera:camera-view:$versions.camera_view"
+deps.camera = camera
+
+def kotlin = [:]
+kotlin.gradle_plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+kotlin.stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin"
+kotlin.lib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
+kotlin.common = "org.jetbrains.kotlin:kotlin-stdlib-common:$versions.kotlin"
+kotlin.databinding = "com.android.databinding:compiler:$versions.kotlin"
+kotlin.extensions_runtime = "org.jetbrains.kotlin:kotlin-android-extensions-runtime:$versions.kotlin"
+kotlin.android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.kotlinx"
+deps.kotlin = kotlin
+
+deps.smartcropper = "com.github.pqpo:SmartCropper:$versions.smartcropper"
+deps.permissions = "pub.devrel:easypermissions:$versions.easypermissions"
+
+deps.wechat = "com.tencent.mm.opensdk:wechat-sdk-android-without-mta:$versions.wechat"
+deps.down_timer = "in.xiandan:count-down-timer:$versions.down_timer"
+deps.banner = "com.ms:Banner:$versions.banner"
+deps.pinyin = "com.github.promeg:tinypinyin:$versions.tinypinyin"
+deps.hutool = "cn.hutool:hutool-all:$versions.hutool"
+deps.gif = "pl.droidsonroids.gif:android-gif-drawable:$versions.gif"
+deps.fastjson = "com.alibaba:fastjson:$versions.fastjson"
+deps.subtitle = "com.avery:subtitle:$versions.subtitle"
+deps.time_picker = "com.contrarywind:Android-PickerView:$versions.time_picker"
+
+deps.zxing = "com.king.zxing:zxing-lite:$versions.zxing"
+deps.mpchart = "com.github.PhilJay:MPAndroidChart:$versions.mpchart"
+deps.applog = "com.bytedance.applog:RangersAppLog-Lite-cn:$versions.applog"
+deps.xpermission = "com.github.getActivity:XXPermissions:$versions.xpermission"
+deps.blankj = "com.blankj:utilcodex:$versions.blankj"
+deps.combinebitmap = "com.github.Othershe:CombineBitmap:$versions.combinebitmap"
+deps.oaid = "com.github.gzu-liyujiang:Android_CN_OAID:$versions.oaid"
+deps.pictureselector = "io.github.lucksiege:pictureselector:$versions.pictureselector"
+deps.subsampling = "com.davemorrissey.labs:subsampling-scale-image-view-androidx:$versions.subsampling"
+
+deps.recyclerAdapter = "com.github.CymChad:BaseRecyclerViewAdapterHelper:$versions.AdapterHelper"
+deps.logger = "com.orhanobut:logger:$versions.logger"
+deps.vlayout = "com.alibaba.android:vlayout:$versions.vlayout"
+deps.leakcannery = "com.squareup.leakcanary:leakcanary-android:$versions.leakcannery"
+deps.okio = "com.squareup.okio:okio:$versions.okio"
+
+def qq = [:]
+qq.union = "com.qq.e.union:union:$versions.qq_union"
+qq.bugly = "com.tencent.bugly:crashreport:latest.release"
+deps.qq = qq
+
+ext.versions = versions
+ext.deps = deps

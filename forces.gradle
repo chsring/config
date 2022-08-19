@@ -1,0 +1,70 @@
+configurations.all {
+//解决重复依赖
+    resolutionStrategy {
+        failOnVersionConflict()
+//        eachDependency { details ->
+//            //获取当前循环到的依赖库
+//            def requested = details.requested
+//            if (requested.group == 'com.android.support') {
+//                //且其名字不是以multidex开头的
+//                if (!requested.name.startsWith("multidex")) {
+//                    details.useVersion versions.support
+//                }
+//            }
+//        }
+        force deps.support.app_compat
+        force deps.support.annotation
+        force deps.support.core
+        force deps.support.core_common
+        force deps.support.core_runtime
+        force deps.support.fragment
+        force deps.support.constraint_layout
+        force deps.retrofit.retrofit
+        force deps.okhttp.okhttp
+        force deps.rxjava.rxjava
+        force deps.rxjava.rxandroid
+        force deps.google.material
+        force deps.camera.lifecycle
+        force deps.camera.camera2
+        force deps.camera.core
+        force deps.camera.view
+        force deps.google.gson
+        force deps.test.junit
+        force deps.google.guava
+
+        force deps.support.recyclerview
+        force deps.support.activity
+        force deps.support.annotations
+        force deps.support.exifinterface
+        force deps.support.transition
+        force deps.support.concurrent
+        force deps.support.collection
+        force deps.support.vectordrawable
+
+        force deps.arch.lifecycle_extensions
+        force deps.arch.lifecycle_viewmodel
+        force deps.arch.lifecycle_livedata
+        force deps.arch.lifecycle_process
+        force deps.arch.lifecycle_livedata_core
+
+        //这两个如果放开 会报错 已经解决。升级到2.3.1 因为  androidx.appcompat:appcompat:1.2.0 的依赖树中包含 androidx.lifecycle:lifecycle-common:2.3.1
+        force deps.arch.lifecycle_common
+        //InitializationProvider 报错
+        force deps.arch.lifecycle_runtime
+
+        force deps.kotlin.lib
+        force deps.kotlin.stdlib
+        force deps.kotlin.common
+        force deps.kotlin.extensions_runtime
+        force deps.kotlin.android
+
+        force deps.databinding.common
+        force deps.databinding.runtime
+        force deps.databinding.adapters
+
+        force deps.umeng.huawei_hmf
+        force deps.umeng.huawei_security
+        force deps.umeng.huawei_network
+        force deps.okio
+    }
+}
