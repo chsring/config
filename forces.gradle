@@ -54,6 +54,7 @@ configurations.all {
         force deps.arch.lifecycle_runtime
 
         force deps.kotlin.lib
+        force deps.kotlin.lib8
         force deps.kotlin.stdlib
         force deps.kotlin.common
         force deps.kotlin.extensions_runtime
