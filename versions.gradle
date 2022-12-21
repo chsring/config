@@ -134,6 +134,8 @@ versions.leakcannery = "2.9.1"
 versions.okio = "2.8.0"
 versions.qq_union = "4.482.1352"
 
+versions.livedatabus = "1.8.0"
+
 def deps = [:]
 def arch = [:]
 arch.page = "androidx.paging:paging-runtime:$versions.page"
@@ -311,6 +313,8 @@ def qq = [:]
 qq.union = "com.qq.e.union:union:$versions.qq_union"
 qq.bugly = "com.tencent.bugly:crashreport:latest.release"
 deps.qq = qq
+
+deps.livedatabus = "io.github.jeremyliao:live-event-bus-x:$versions.livedatabus"
 
 ext.versions = versions
 ext.deps = deps
