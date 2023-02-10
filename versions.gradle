@@ -15,8 +15,8 @@ ext.buildVersions = buildVersions
 
 //统一JDK版本
 def jdkVersion = [:]
-jdkVersion.sourceCompatibility = JavaVersion.VERSION_1_8
-jdkVersion.targetCompatibility = JavaVersion.VERSION_1_8
+jdkVersion.sourceCompatibility = JavaVersion.VERSION_11
+jdkVersion.targetCompatibility = JavaVersion.VERSION_11
 ext.jdkVersion = jdkVersion
 
 def versions = [:]
