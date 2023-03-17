@@ -135,6 +135,7 @@ versions.okio = "2.8.0"
 versions.qq_union = "4.482.1352"
 
 versions.livedatabus = "1.8.0"
+versions.mmkv = '1.2.15'
 
 def deps = [:]
 def arch = [:]
@@ -309,10 +310,11 @@ deps.vlayout = "com.alibaba.android:vlayout:$versions.vlayout"
 deps.leakcannery = "com.squareup.leakcanary:leakcanary-android:$versions.leakcannery"
 deps.okio = "com.squareup.okio:okio:$versions.okio"
 
-def qq = [:]
-qq.union = "com.qq.e.union:union:$versions.qq_union"
-qq.bugly = "com.tencent.bugly:crashreport:latest.release"
-deps.qq = qq
+def tencent = [:]
+tencent.union = "com.qq.e.union:union:$versions.qq_union"
+tencent.bugly = "com.tencent.bugly:crashreport:latest.release"
+tencent.mmkv = "com.tencent:mmkv:$versions.mmkv"
+deps.tencent = tencent
 
 deps.livedatabus = "io.github.jeremyliao:live-event-bus-x:$versions.livedatabus"
 
