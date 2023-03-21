@@ -68,5 +68,7 @@ configurations.all {
         force deps.umeng.huawei_security
         force deps.umeng.huawei_network
         force deps.okio
+        force deps.support.coordinatorlayout
+        force deps.support.versionedparcelable
     }
 }

@@ -137,6 +137,9 @@ versions.qq_union = "4.482.1352"
 versions.livedatabus = "1.8.0"
 versions.mmkv = '1.2.15'
 
+versions.coordinatorlayout = '1.1.0'
+versions.versionedparcelable = '1.1.1'
+
 def deps = [:]
 def arch = [:]
 arch.page = "androidx.paging:paging-runtime:$versions.page"
@@ -168,6 +171,8 @@ support.transition = "androidx.transition:transition:$versions.transition"
 support.exifinterface = "androidx.exifinterface:exifinterface:$versions.exifinterface"
 support.annotation = "androidx.annotation:annotation-experimental:$versions.annotation_experimental"
 support.activity = "androidx.activity:activity:$versions.activity"
+support.coordinatorlayout = "androidx.coordinatorlayout:coordinatorlayout:$versions.coordinatorlayout"
+support.versionedparcelable = "androidx.versionedparcelable:versionedparcelable:$versions.versionedparcelable"
 
 deps.support = support
 
