@@ -31,9 +31,9 @@ java -jar buglyqq-upload-symbol.jar -appid 21ba13754b -appkey 82f8ace3-516f-4e30
 2.数组，列表使用时一定要判空
 3.字符串使用时一定判空
 
-### 编译命令 
-
+### 编译命令
 ./gradlew album:assemble
+### 如果没有 ./gradlew 则执行 gradle init
 
 ### 发版修改点：
 1. app下gradle中         versionCode 3401 ；versionName "3.4.1"
